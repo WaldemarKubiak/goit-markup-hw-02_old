@@ -1,9 +1,14 @@
+:root {
+  --mouse-over-color: #2196f3;
+  --header-bacground-color: #2f303a;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
 
-.blue {
-  font-family: "Raleway";
+.logo-blue {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
@@ -12,12 +17,72 @@ body {
   /* text-decoration: none; */
 }
 
-header > a {
-  font-family: "Oleo Script";
-  font-weight: 400;
+.logo-black {
+  /* font-family: "Oleo Script"; */
+  /* font-weight: 400; */
   font-size: 26px;
   line-height: 36px;
   letter-spacing: 0.03em;
   color: #000;
+  /* text-decoration: none; */
+}
+
+.link-no-underline {
   text-decoration: none;
+}
+
+.nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.nav:hover,
+.nav:focus {
+  color: var(--mouse-over-color);
+}
+
+.li-no-dots {
+  list-style-type: none;
+}
+
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--mouse-over-color);
+}
+
+.header-one {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+}
+
+.main-header {
+  background-color: var(--header-bacground-color);
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background-color: #2196f3;
+  border-radius: 4px;
+  border: none;
 }
