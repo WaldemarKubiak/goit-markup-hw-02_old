@@ -1,6 +1,7 @@
 :root {
   --background-header-color: #fff;
   --mouse-over-color: #2196f3;
+  --mouse-over-text-color: #fff;
   --header-bacground-color: #2f303a;
   --primary-font-color: #212121;
   --secondary-font-color: #757575;
@@ -12,6 +13,7 @@
   --background-footer: #2f303a;
   --primary-footer-font: #fff;
   --footer-contact-font-color: rgba(255, 255, 255, 0.6);
+  --primary-background-button-portfolio: #f5f4fa;
 }
 
 body {
@@ -25,7 +27,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-logo-web);
   /* text-decoration: none; */
@@ -35,7 +37,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 36px;
+  line-height: 1.38;
   letter-spacing: 0.03em;
   color: var(--primary-logo-studio);
   /* text-decoration: none; */
@@ -48,7 +50,7 @@ body {
 .nav {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-font-color);
 }
@@ -65,7 +67,7 @@ body {
 .contact {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-font-color);
 }
@@ -78,7 +80,7 @@ body {
 .header-one {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
@@ -93,19 +95,48 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  text-align: center;
+  line-height: 1.87;
+  /* text-align: center; */
   letter-spacing: 0.06em;
   color: #fff;
   background-color: #2196f3;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button-portfolio {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--primary-font-color);
+  background-color: var(--primary-background-button-portfolio);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--mouse-over-color);
+  color: var(--mouse-over-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .header-three {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-font-color);
@@ -114,7 +145,7 @@ body {
 .main-strenghts p {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
 }
@@ -122,7 +153,7 @@ body {
 .header-two {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-font-color);
@@ -139,8 +170,16 @@ body {
 .header-four {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-font-color);
+}
+
+.header-four-portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
   letter-spacing: 0.03em;
   color: var(--primary-font-color);
 }
@@ -148,8 +187,16 @@ body {
 .picture-text {
   /* font-weight: 400; */
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-font-color);
+}
+
+.picture-text-portfolio {
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
 }
@@ -171,7 +218,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-logo-studio);
   /* text-decoration: none; */
@@ -179,14 +226,14 @@ body {
 
 .address-text {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-footer-font);
 }
 
 .contact-footer {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-contact-font-color);
 }
