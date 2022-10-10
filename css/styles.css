@@ -1,4 +1,6 @@
-:root {
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
   --background-header-color: #fff;
   --mouse-over-color: #2196f3;
   --mouse-over-text-color: #fff;
@@ -14,11 +16,6 @@
   --primary-footer-font: #fff;
   --footer-contact-font-color: rgba(255, 255, 255, 0.6);
   --primary-background-button-portfolio: #f5f4fa;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: #212121;
 }
 
 .header {
